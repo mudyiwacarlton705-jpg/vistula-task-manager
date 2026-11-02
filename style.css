@@ -1,0 +1,184 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f5eaff);
+    color: #26324b;
+}
+
+/* Header */
+header {
+    background: linear-gradient(120deg, #273c75, #6c5ce7);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 18px;
+    max-width: 950px;
+    margin: 0 auto 25px;
+    box-shadow: 0 8px 25px rgba(39, 60, 117, 0.2);
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+header p {
+    color: #e6eaff;
+}
+
+/* Main content */
+main {
+    max-width: 950px;
+    margin: auto;
+}
+
+.task-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(50, 50, 93, 0.08);
+}
+
+h2 {
+    color: #4834a3;
+    margin-top: 0;
+}
+
+/* Form */
+#task-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #d7dcef;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #8c7ae6;
+    border-color: #6c5ce7;
+}
+
+#task-title {
+    min-width: 180px;
+}
+
+#task-description {
+    min-width: 220px;
+}
+
+/* Buttons */
+button {
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #4834a3;
+    transform: translateY(-1px);
+}
+
+.edit-task {
+    background: #0984e3;
+}
+
+.delete-task {
+    background: #e74c3c;
+}
+
+.toggle-task {
+    background: #00a884;
+}
+
+/* Individual task cards */
+.task-item {
+    background: #f8f9ff;
+    border-left: 5px solid #6c5ce7;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(50, 50, 93, 0.06);
+}
+
+.task-title {
+    color: #273c75;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.task-description {
+    color: #68738a;
+    margin-top: 8px;
+}
+
+.task-status {
+    color: #d68910;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Status messages and links */
+#status-message {
+    color: #0984a3;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+#contribution-link,
+a {
+    color: #6c5ce7;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: #68738a;
+    margin: 25px auto;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .task-section {
+        padding: 18px;
+    }
+
+    #task-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input,
+    textarea,
+    #task-title,
+    #task-description {
+        width: 100%;
+    }
+}

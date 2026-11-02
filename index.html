@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vistula Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+
+    <header>
+        <h1>Vistula Task Manager</h1>
+        <p>Organise your tasks and manage your productivity.</p>
+        <p>Student ID: <strong id="student-id">73491</strong></p>
+    </header>
+
+    <main>
+        <section class="task-section">
+            <h2>Add a New Task</h2>
+
+            <form id="task-form">
+                <label for="task-title">Task Title</label>
+                <input
+                    type="text"
+                    id="task-title"
+                    placeholder="Enter task title"
+                    required
+                >
+
+                <label for="task-description">Description</label>
+                <textarea
+                    id="task-description"
+                    placeholder="Enter task description"
+                ></textarea>
+
+                <button type="submit" id="task-submit">
+                    Add Task
+                </button>
+            </form>
+
+            <p id="status-message" role="status">
+                Ready to manage your tasks.
+            </p>
+        </section>
+
+        <section class="task-section">
+            <h2>My Tasks</h2>
+            <div id="task-list">
+                <!-- Tasks will appear here -->
+            </div>
+        </section>
+
+        <p>
+            <a id="contribution-link" href="contribution.html">
+                View Partner Contribution
+            </a>
+        </p>
+    </main>
+
+    <footer>
+        <p>Vistula University - Team Project IT</p>
+    </footer>
+
+</body>
+</html>
